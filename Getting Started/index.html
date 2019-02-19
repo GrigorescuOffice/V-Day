@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Best Vacantion !</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="text">
+            <h2>Get the date that your girlfirend she always wanted!</h2>
+            <p>Now for just 599.99$</p>
+        </div>
+        <div id="btns">
+            <button class="btn" onclick="payment()">
+                <span>BUY NOW</span>
+            </button>
+            <button class="btn"><a href="info.html">
+                <span>MORE INFO</span></a>
+            </button>
+        </div>
+    </div>
+    <div id="payment">
+        <div class="mts">
+            <img src="http://purepng.com/public/uploads/large/purepng.com-credit-cardobjectsdiamond-ringcardobjectbankcreditatmdebit-631522323297n1nru.png" alt="" id="card">
+            <h1>Add a Payment Method</h1>
+        </div>
+        <div id="addMet">
+            <div id="imgs">
+                <img src="http://pluspng.com/img-png/mastercard-hd-png-mastercard-high-quality-png-png-image-1135.png" class="card"alt="" >
+                <img src="https://www.rbcroyalbank.com/business/credit-cards/_assets-custom/images/cards/business-cashback-card.png" class="card"alt="" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjcJAX8Zgzi0933VCw2NlShpB1sA5zL0CC3Q4O6QWVSNWiCrv_2A" class="card"alt="" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf35SokQH7dovY5bSCTnJasWl54YBRCSLQTTcjZf8Oa8xnQrvpQQ" class="card"alt="" >
+                <img src="data:image/png;base64,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" class="card"alt="" >
+                <br />
+            </div>
+            <div id="info">
+                <p>Credit card Number</p>
+                <input type="text">
+                <p>Cardholder Name</p>
+                <input type="text">
+                <p>CVC</p>
+                <input type="text" class="small">
+                <p>Expiration(MM/YYYY)</p>
+                <input type="text" class="small">
+                <br /><br/>
+                <input type="checkbox">
+                Set as default
+            </div>
+        </div>
+        <div id="check">
+            <button class="btn check" id="submit" onclick="end_payment()"><span>Submit</span></button>
+            <button class="btn check"
+            id="cancel" onclick="cancel_payment()"><span>Cancel</span></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

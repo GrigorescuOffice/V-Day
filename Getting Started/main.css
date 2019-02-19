@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url("screenshots/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#text {
+    text-align: center;
+    padding-top: 16em;
+    color: aliceblue;
+    text-shadow: 0px 0px 10px #000;
+    font-size: 20px;
+}
+
+#text > h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#text > p {
+    position: absolute;
+    transform: translate(260%, -200%);
+    font-family: monospace;
+}
+
+#btns {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.btn { 
+    background-color: #FF8633;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#submit:hover{
+    background: green; 
+}
+#cancel:hover{
+    background: red;
+}
+#payment{
+    float: left;
+    position: absolute;
+    display: none ;
+    width: 440px;
+    height: 520px;
+    background: whitesmoke;
+    top: 18%;
+    left: 32%;
+}
+.mts{
+    float: left;
+    display: inline-block;
+    width : 100% ; 
+    padding-left: 2.43em;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+#card{
+    padding: 30px 10px;
+    padding-right: 0;
+    float: left;
+    width: 60px; 
+}
+h1{
+    float: left;
+    padding: .7em .4em;
+    padding-right: 8px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+.check{
+    float: left;
+    padding: 8px 17px;
+    border-radius: 4px;
+}
+#info{
+    display: inherit;
+    padding: 0 2em  ;
+    padding-top: 0; 
+    margin: 0;
+}
+#info > p{
+    margin-bottom: 0;
+}
+#info > input{
+    width: 100%;
+}  
+#info > input:last-of-type{
+
+    width: 5%;
+}
+
+#check{
+    padding:1em 0;
+    height: 20%;
+}
+.card{
+    padding: 30px 0px;
+    padding-right: 8px;
+    float: left;
+    width: 60px;
+    height: 40px;
+}
+.card:first-of-type{
+    padding-left: 2em;
+}
+.card:last-of-type{
+    padding-right: 3em;
+}
+#info > .small{
+    width: 50%;
+}
